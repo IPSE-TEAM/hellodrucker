@@ -1,0 +1,366 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "accept",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "member",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "cancelmember",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "member",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "cancelsponso",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "delmember",
+            "base": "",
+            "fields": [
+                {
+                    "name": "teammember",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "join",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "sponsoraddr",
+                    "type": "name"
+                },
+                {
+                    "name": "membername",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "launch",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "leave",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "sponsoraddr",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "send",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "amount",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "settle",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "slash",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "member",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "sponsor",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "sponsorname",
+                    "type": "string"
+                },
+                {
+                    "name": "totaltoken",
+                    "type": "asset"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "members",
+                    "type": "uint32"
+                },
+                {
+                    "name": "incentive",
+                    "type": "asset"
+                },
+                {
+                    "name": "slashtoken",
+                    "type": "asset"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "period",
+                    "type": "uint64"
+                },
+                {
+                    "name": "phase",
+                    "type": "uint32"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "teammember",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "sponsoraddr",
+                    "type": "name"
+                },
+                {
+                    "name": "membername",
+                    "type": "string"
+                },
+                {
+                    "name": "in",
+                    "type": "asset"
+                },
+                {
+                    "name": "out",
+                    "type": "asset"
+                },
+                {
+                    "name": "outbalance",
+                    "type": "asset"
+                },
+                {
+                    "name": "incentive",
+                    "type": "asset"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                },
+                {
+                    "name": "phase",
+                    "type": "uint32"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "typein",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "sponsorname",
+                    "type": "string"
+                },
+                {
+                    "name": "period",
+                    "type": "uint32"
+                },
+                {
+                    "name": "incentive",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "withdraw",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "withdrawbal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "accept",
+            "type": "accept",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cancelmember",
+            "type": "cancelmember",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cancelsponso",
+            "type": "cancelsponso",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delmember",
+            "type": "delmember",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "join",
+            "type": "join",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "launch",
+            "type": "launch",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "leave",
+            "type": "leave",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "send",
+            "type": "send",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "settle",
+            "type": "settle",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "slash",
+            "type": "slash",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "typein",
+            "type": "typein",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "withdraw",
+            "type": "withdraw",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "withdrawbal",
+            "type": "withdrawbal",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "sponsor",
+            "type": "sponsor",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "teammember",
+            "type": "teammember",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
